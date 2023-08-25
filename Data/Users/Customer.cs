@@ -5,9 +5,10 @@ namespace ConsoleGenericStore.Data.Users
 {
 	public class Customer : User
 	{
-		public Customer(string name, string email) : base(name, email) => PinnedLists.ListCustomers.Add(item: this);
+		public Customer(string name, string email) : base(name, email)
+		{
 
-		public PuchaseHist PuchaseHist = new PuchaseHist();
+		}
 
 	}
 
