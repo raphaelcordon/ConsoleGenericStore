@@ -4,17 +4,18 @@ namespace ConsoleGenericStore.Data.Products
 {
 	public class Product : Base
 	{
-		public Product(ECategory category, string name, decimal price, string description)
+		public Product(string name, decimal price, string description, ECategory category)
 		{
-			Category = category;
 			Name = name;
 			Price = price;
 			Description = description;
+			Category = category;
 		}
 
-		public ECategory Category { get; set; }
 		public string Name { get; set; }
 		public decimal Price { get; set; }
 		public string Description { get; set; }
+		public ECategory Category { get; set; }
 	}
+
 }
