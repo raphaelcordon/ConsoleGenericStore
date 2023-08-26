@@ -10,6 +10,13 @@ namespace ConsoleGenericStore.Controller.CustomerController
 		{
 			ListCustomers.Add(customer);
 		}
+		public static void RegisterAllCustomers(List<Customer> customers)
+		{
+			foreach (var customer in customers)
+			{
+				ListCustomers.Add(customer);
+			}
+		}
 		public static void ListAllCustomers()
 		{
 			Console.WriteLine("List of registered customers");
@@ -19,14 +26,6 @@ namespace ConsoleGenericStore.Controller.CustomerController
 				Console.WriteLine($"Name: {customer.Name} | Email: {customer.Email}");
 			}
 			Console.WriteLine($"--------------------------------");
-		}
-
-		internal static void RegisterAllCustomers(List<Customer> customers)
-		{
-			foreach (var customer in customers)
-			{
-				ListCustomers.Add(customer);
-			}
 		}
 	}
 }

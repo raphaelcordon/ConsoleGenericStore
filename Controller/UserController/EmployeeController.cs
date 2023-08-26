@@ -21,6 +21,12 @@ namespace ConsoleGenericStore.Controller.EmployeeController
 			Console.WriteLine($"--------------------------------");
 		}
 
-
+		public static void RegisterAllEmployees(List<Employee> employees)
+		{
+			foreach (var employee in employees)
+			{
+				ListEmployees.Add(employee);
+			}
+		}
 	}
 }

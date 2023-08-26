@@ -16,6 +16,10 @@ Customer customer3 = new Customer("Antonio", "antonio@email.co");
 list.Add(customer3);
 
 CustomerController.RegisterAllCustomers(list);
+
+Customer customer4 = new Customer("Luis", "luis@email.co");
+CustomerController.RegisterCustomer(customer4);
+
 CustomerController.ListAllCustomers();
 
 
@@ -33,4 +37,4 @@ EmployeeController.ListAllEmployees();
 var product1 = new Product("Metallica - ...And Justice for All", 20.99m, "CD de Metal", 0);
 
 ProductController.RegisterProduct(product1);
-ProductController.ListAllProducts();
+ProductController.ListAllProducts(); 
