@@ -9,6 +9,14 @@ namespace ConsoleGenericStore.Controller.ProductController
 		{
 			ListProducts.Add(product);
 		}
+
+		public static void RegisterAllProducts(List<Product> products)
+		{
+			foreach (Product product in products)
+			{
+				ListProducts.Add(product);
+			}
+		}
 		public static void ListAllProducts()
 		{
 			Console.WriteLine("List of registered products");

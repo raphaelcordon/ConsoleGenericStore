@@ -1,7 +1,9 @@
 ﻿using ConsoleGenericStore.Controller.CustomerController;
 using ConsoleGenericStore.Controller.EmployeeController;
 using ConsoleGenericStore.Controller.ProductController;
+using ConsoleGenericStore.Controller.PurchaseController;
 using ConsoleGenericStore.Data.Products;
+using ConsoleGenericStore.Data.Purchases;
 using ConsoleGenericStore.Data.Users;
 
 //Creating Customers
@@ -35,6 +37,21 @@ EmployeeController.ListAllEmployees();
 
 //Creating Products
 var product1 = new Product("Metallica - ...And Justice for All", 20.99m, "CD de Metal", 0);
+var product2 = new Product("Queen - Kind of Magic", 50.99m, "Kind of Magic DVD Tour", 0);
+var product3 = new Product("Led Zeppelin - IV", 30.99m, "Remastered Vinyl", 0);
+var product4 = new Product("Iron Maiden - Iron Maiden", 20.99m, "Remastered K7", 0);
 
 ProductController.RegisterProduct(product1);
-ProductController.ListAllProducts(); 
+ProductController.RegisterProduct(product2);
+ProductController.RegisterProduct(product3);
+ProductController.RegisterProduct(product4);
+ProductController.ListAllProducts();
+
+
+//Creating Purchases
+var purchaseProds1 = new List<Product>();
+purchaseProds1.Add(product1);
+purchaseProds1.Add(product2);
+var purchase1 = new Purchase(purchaseProds1, customer1, false);
+PurchaseController.RegisterPurchase(purchase1);
+PurchaseController.ListAllPurchases();
