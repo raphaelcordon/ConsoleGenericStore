@@ -1,7 +1,7 @@
 # Console Generic Store
 
-## First C# project as part of a sequence of reviewing courses I'm doing on C# and Dot.Net.
-## This project is a console implementation of basic concepts by simulating a **Shop** where you can create:
+### First C# project as part of a sequence of reviewing courses I'm doing on C# and Dot.Net.
+### This project is a console implementation of basic concepts by simulating a **Shop** where you can create:
   - **Customers** with Name and email;
   - **Employees** with Name, email, Registry Number and Role;
   - **Products** with Name, Price, Description and Category;
